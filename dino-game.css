@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.game{
+    width: 600px;
+    height: 230px;
+    border: 1px solid #000;
+    margin: auto;
+    background-image: url(/crampete/images/1421638.webp);
+}
+#dino{
+    width: 55px;
+    height: 89px;
+    background-image: url(/crampete/images/spideyme.png);
+    background-size: 50px;
+    position: relative;
+    top: 143px;
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{
+        top: 143px;
+    }
+    30%{
+        top: 115px;
+    }
+
+    50%{
+        top: 70px;
+    }
+    80%{
+        top: 115px;
+    }
+    100%{
+        top: 143px;
+    }
+}
+#plant{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 101px;
+    left: 500px;
+    background-image:url(/crampete/images/png-clipart-game-off-game-jam-gamedev-net-video-game-cactus-game-angle.png) ;
+    background-size: 20px 40px;
+    animation: plant-block 1.3s infinite linear;
+}
+@keyframes plant-block {
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: -20px;
+    }
+}
